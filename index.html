@@ -68,7 +68,18 @@
             <p class="text-center text-[10px] text-gray-500 mt-3 uppercase tracking-widest">V.ai can make mistakes, please double-check important information.</p>
         </div>
     </footer>
+    <script>
+        const chatWindow = document.getElementById('chat-window');
+        const messageContainer = document.getElementById('messages');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const greeting = document.getElementById('greeting');
+        const overlay = document.getElementById('loading-overlay');
+        const loadProgress = document.getElementById('load-progress');
+        const loadStatus = document.getElementById('load-status');
 
+        let engine;
+    </script>
     <script type="module" src="model.js"></script>
 </body>
 </html>
